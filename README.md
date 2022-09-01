@@ -7,7 +7,7 @@ This is a script for generating static html sites
 ## Dependencies
 
 ```
-Ubuntu
+Ubuntu 22.04
 ```
 
 ## Installing
@@ -19,10 +19,18 @@ cd shell-script-static-site
 
 ## Usage
 
-Go to your terminal and run the follow command. It will then ask for your site's nome and it will create an index.html in the same directory.
+You can pass your contact list directly through your command line or via a text file. You should separate your contact's name and phone with a comma (,), for example: Caick,38291092.
+
+To use the text file, edit it and do the command:
 
 ```
-sh main.sh
+sh main.sh "$(cat list.txt)"
+``` 
+
+Through your command line:
+
+```
+sh main.sh caick,38928019 john,1928391 ana,1023981
 ```
 
 ## License

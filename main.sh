@@ -5,7 +5,7 @@ read WEBSITE_NAME
 
 LIST='';
 
-for contact in $*s
+for contact in $*
 do	
 	name=$(echo ${contact} | cut -d',' -f1)
 	phone=$(echo ${contact} | cut -d',' -f2)
